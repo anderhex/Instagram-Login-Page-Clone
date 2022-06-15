@@ -1,0 +1,288 @@
+/*
+   Instagram Login Page Clone
+   @Author: Anderson Daniel
+   @Github: Anderhex
+   @License: MIT
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    transition: ease all 0.5s;
+}
+
+:root {
+    --bg: #fafafa;
+    --btnColor: #0095f6;
+    --card-bg: white;
+}
+
+body {
+    background: var(--bg);
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+a {
+    color: #0095f6;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instagram {
+    max-width: 935px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: -30px;
+}
+
+.insta-smartphone {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.smartphone {
+    max-width: 465px;
+    width: 100%;
+    min-height: 600px;
+    background-image: url('../../assets/img/smartphone.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.smartphone img {
+    left: 73px;
+    top: -3px;
+    position: relative;
+}
+
+.insta-login {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.insta-login-wrapper {
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid #dbdbdb;
+    position: relative;
+}
+
+.app-stores {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.app-stores-links {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.app-stores-links img {
+    max-width: 136px;
+    width: 100%;
+    display: block;
+    margin: 3px;
+}
+
+.login-form {
+    width: 100%;
+    min-height: 400px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-form-wrapper {
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.login-form form input {
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.login-form-facebook {
+    color: #385185;
+    text-align: center;
+}
+
+.login-form-forgetpw {
+    text-align: center;
+    font-size: 12px;
+}
+
+.login-form-facebook img {
+    width: 20px;
+    padding-left: 5px;
+    display: inline-block;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 7px;
+    background: var(--btnColor);
+    border: none;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form button:active {
+    opacity: 0.7;
+}
+
+.logo-img {
+    width: 175px;
+    display: block;
+    position: relative;
+    margin: auto;
+}
+
+.or {
+    width: 100%;
+    height: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dbdbdb;
+    background: #dbdbdb;
+    color: #8e8e8e;
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.or span {
+    z-index: 1;
+    position: absolute;
+    background: white;
+    padding: 0 13px 0 10px;
+}
+
+.create-account {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8e8e8e;
+    padding-top: 50px;
+}
+
+.footer-links {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+}
+
+.container {
+    max-width: 1050px;
+    position: relative;
+    text-align: center;
+}
+
+footer .container p {
+    padding-top: 15px;
+}
+
+.footer-links li {
+    padding: 5px;
+    display: block;
+}
+
+.footer-links li a {
+    color: #8e8e8e;
+}
+
+@media screen and (max-width:1000px) {
+    .insta-smartphone {
+        display: none;
+    }
+    .insta-login {
+        width: 100%;
+    }
+    .or span {
+        background: var(--bg);
+    }
+    .card {
+        background: none;
+        border: none;
+    }
+}
