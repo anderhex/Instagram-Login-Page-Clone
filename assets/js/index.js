@@ -17,7 +17,7 @@ const instaPhoneSlider = images => {
         ], { iterations: 1, duration: 1000 });
         screen.src = images[screenIndex];
 
-    }, 3000);
+    }, 5000);
 
 
 }
